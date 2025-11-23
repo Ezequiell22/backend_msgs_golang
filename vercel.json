@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/code", "destination": "/api/index" },
+    { "source": "/message/(.*)", "destination": "/api/index" },
+    { "source": "/health", "destination": "/api/index" }
+  ]
+}
