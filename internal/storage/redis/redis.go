@@ -68,3 +68,7 @@ func (s *Store) GetAndDelete(ctx context.Context, code string) (string, bool, er
 	}
 	return v, true, nil
 }
+
+func (s *Store) Ping(ctx context.Context) error {
+    return s.client.Ping(ctx).Err()
+}
